@@ -11,12 +11,12 @@ namespace PalindromeLongest
 
             int maxLen = 0;
             // check all single letter central points
-            for (int i = 1; i < letters.Length; i++)
+            for (int i = 0; i < letters.Length; i++)
             {
                 maxLen = Math.Max(maxLen, PalindromeLen(letters, i, i));
             }
             //check all double letter central points
-            for (int c = 1; c < letters.Length - 1; c++)
+            for (int c = 0; c < letters.Length - 1; c++)
             {
                 maxLen = Math.Max(maxLen, PalindromeLen(letters, c, c + 1));
             }
