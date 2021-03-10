@@ -26,7 +26,7 @@ namespace PalindromeLongest
 
         static int PalindromeLen(string letters , int leftIdx, int rightIdx) 
         {            
-            while (leftIdx > 0 && rightIdx < letters.Length
+            while (leftIdx >= 0 && rightIdx < letters.Length  //included >=
                 && letters[leftIdx] == letters[rightIdx])
             {
                 leftIdx--;
