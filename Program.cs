@@ -25,8 +25,7 @@ namespace PalindromeLongest
         }
 
         static int PalindromeLen(string letters , int leftIdx, int rightIdx) 
-        {
-            
+        {            
             while (leftIdx > 0 && rightIdx < letters.Length
                 && letters[leftIdx] == letters[rightIdx])
             {
@@ -37,5 +36,4 @@ namespace PalindromeLongest
             return rightIdx - leftIdx - 1; //this is the length of polidrome
         }
     }
-
 }
